@@ -12,8 +12,8 @@ $(document).ready(function() {
     event.preventDefault();
     let number = $('input').val();
 
-    if(number > 30 || number <= 0) {
-      swal('Error!', 'Number must be from 0-30!')
+    if(number > 30 || number < 1) {
+      swal('Error!', 'Number must be from 1-30!')
     } else {
       $('.grid table').show();
       $('.grid table').html('');
